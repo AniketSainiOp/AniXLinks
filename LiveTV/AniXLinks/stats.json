@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-07-18T18:24:31.943718+05:30",
-  "total_channels": 772,
+  "generated_at": "2025-07-18T18:34:25.572140+05:30",
+  "total_channels": 771,
   "total_groups": 47,
   "groups_breakdown": {
     "BANGLA": 37,
@@ -19,9 +19,9 @@
     "Entertainment": 5,
     "Sports": 9,
     "Movies": 4,
+    "SonyLIV by CRICFy": 1,
     "Infotainment": 1,
     "Music": 10,
-    "SonyLIV by CRICFy": 1,
     "DOCUMENTARY": 15,
     "Lifestyle": 1,
     "ENGLISH": 3,
@@ -30,22 +30,22 @@
     "HINDI MOVIES": 4,
     "HINDI MUSIC": 5,
     "INDIAN BANGLA": 9,
-    "KIDS": 4,
-    "ISLAMIC": 3,
     "Information": 1,
+    "KIDS": 4,
     "INDIAN OTHERS": 1,
+    "ISLAMIC": 3,
     "MOVIES": 7,
     "NEWS": 10,
     "NEWS INTERNASIONAL": 4,
     "OTHERS": 8,
     "PAKISTAN": 3,
+    "Shaharum": 1,
     "Football Live Match": 5,
     "Bangla": 9,
-    "Shaharum": 1,
     "India": 14,
     "Cartoon": 10,
+    "Discovery": 6,
     "English Channel": 4,
-    "Discovery": 7,
     "Religion": 4,
     "Business": 2,
     "Religious": 2,
@@ -57,5 +57,5 @@
     "github": "https://github.com/aniketsainiop",
     "version": "2.0.2"
   },
-  "active_channels": 772
+  "active_channels": 771
 }
