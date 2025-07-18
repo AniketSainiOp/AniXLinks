@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 import pytz
 
-stats_path = 'LiveTV/Bangladesh/stats.json'
+stats_path = 'LiveTV/AniXLinks/stats.json'
 readme_path = 'README.md'
 repo_owner_and_name = 'aniketsainiop/AniXLinks'
 
