@@ -45,7 +45,7 @@ logging.basicConfig(
 )
 
 class AniXLinksCollector:
-    def __init__(self, country: str = "Bangladesh", base_dir: str = "LiveTV", check_links: bool = True):
+    def __init__(self, country: str = "AniXLinks", base_dir: str = "LiveTV", check_links: bool = True):
         self.channels = defaultdict(list)
         self.default_logo = "https://via.placeholder.com/100x100.png?text=AniXLinks"
         self.seen_urls: Set[str] = set()
@@ -475,7 +475,7 @@ def main():
     sources = get_premium_sources()
     
     with AniXLinksCollector(
-        country="Bangladesh", 
+        country="AniXLinks", 
         check_links=os.getenv('SKIP_LINK_CHECK', 'false').lower() != 'true'
     ) as collector:
         
