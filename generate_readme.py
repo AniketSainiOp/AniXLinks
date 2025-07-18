@@ -52,10 +52,10 @@ This project automatically scours the web for publicly available IPTV channel st
 Use the following links to directly access the playlists. These links are automatically updated by the workflow.
 
 - **M3U Playlist URL**: 
-https://raw.githubusercontent.com/{REPO_URL}/main/LiveTV/AniXlinks/AniXLinks.m3u
+https://raw.githubusercontent.com/AniketSainiOp/AniXLinks/refs/heads/main/LiveTV/AniXLinks/AniXLinks.m3u
 
 - **JSON Playlist URL**: 
-https://raw.githubusercontent.com/{REPO_URL}/main/LiveTV/AniXLinks/AniXLinks.json
+https://raw.githubusercontent.com/AniketSainiOp/AniXLinks/refs/heads/main/LiveTV/AniXLinks/AniXLinks.json
 
 
 
