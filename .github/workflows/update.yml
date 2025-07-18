@@ -54,7 +54,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add LiveTV/Bangladesh/* README.md
+          git add LiveTV/AniXLinks/* README.md
           if ! git diff --staged --quiet; then
             git commit -m "📊 Automated Channel Update ($(date -u +'%Y-%m-%d %H:%M:%S UTC'))"
             git push
