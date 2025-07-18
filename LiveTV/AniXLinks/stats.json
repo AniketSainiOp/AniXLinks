@@ -1,6 +1,6 @@
 {
-  "generated_at": "2025-07-18T18:34:25.572140+05:30",
-  "total_channels": 771,
+  "generated_at": "2025-07-18T22:04:24.095765+05:30",
+  "total_channels": 773,
   "total_groups": 47,
   "groups_breakdown": {
     "BANGLA": 37,
@@ -13,12 +13,12 @@
     "MUSIC": 17,
     "Hindi": 8,
     "English Movie": 4,
-    "Movie": 1,
     "FM-Radio": 10,
-    "General": 458,
+    "Movie": 1,
+    "General": 459,
     "Entertainment": 5,
-    "Sports": 9,
     "Movies": 4,
+    "Sports": 9,
     "SonyLIV by CRICFy": 1,
     "Infotainment": 1,
     "Music": 10,
@@ -30,10 +30,10 @@
     "HINDI MOVIES": 4,
     "HINDI MUSIC": 5,
     "INDIAN BANGLA": 9,
+    "ISLAMIC": 3,
     "Information": 1,
     "KIDS": 4,
     "INDIAN OTHERS": 1,
-    "ISLAMIC": 3,
     "MOVIES": 7,
     "NEWS": 10,
     "NEWS INTERNASIONAL": 4,
@@ -44,12 +44,12 @@
     "Bangla": 9,
     "India": 14,
     "Cartoon": 10,
-    "Discovery": 6,
     "English Channel": 4,
+    "Discovery": 7,
     "Religion": 4,
     "Business": 2,
-    "Religious": 2,
-    "Culture": 1
+    "Culture": 1,
+    "Religious": 2
   },
   "author": {
     "name": "Aniket",
@@ -57,5 +57,5 @@
     "github": "https://github.com/aniketsainiop",
     "version": "2.0.2"
   },
-  "active_channels": 771
+  "active_channels": 773
 }

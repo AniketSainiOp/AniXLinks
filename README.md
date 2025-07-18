@@ -5,7 +5,7 @@
 
 **A high-performance, automated M3U playlist aggregator by Aniket (aniket_aep)**
 
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/AniketSainOp/AniXLinks/update.yml?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/AniketSainOp/AniXLinks/actions) [![Last Commit](https://img.shields.io/github/last-commit/AniketSainOp/AniXLinks?style=for-the-badge&logo=git&logoColor=white)](https://github.com/AniketSainOp/AniXLinks/commits/main) [![License](https://img.shields.io/github/license/AniketSainOp/AniXLinks?style=for-the-badge)](https://github.com/AniketSainOp/AniXLinks/blob/main/LICENSE)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/AniketSainOp/Livetv/update.yml?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/AniketSainOp/Livetv/actions) [![Last Commit](https://img.shields.io/github/last-commit/AniketSainOp/Livetv?style=for-the-badge&logo=git&logoColor=white)](https://github.com/AniketSainOp/Livetv/commits/main) [![License](https://img.shields.io/github/license/AniketSainOp/Livetv?style=for-the-badge)](https://github.com/AniketSainOp/Livetv/blob/main/LICENSE)
 
 </div>
 
@@ -17,7 +17,7 @@ This project automatically scours the web for publicly available IPTV channel st
 
 | Total Channels | Total Groups | Last Updated |
 | :---: | :---: | :---: |
-| **771** | **47** | **18 July 2025, 06:34 PM IST** |
+| **773** | **47** | **18 July 2025, 10:04 PM IST** |
 
 ---
 
@@ -26,10 +26,10 @@ This project automatically scours the web for publicly available IPTV channel st
 Use the following links to directly access the playlists. These links are automatically updated by the workflow.
 
 - **M3U Playlist URL**: 
-https://raw.githubusercontent.com/AniketSainiOp/AniXLinks/refs/heads/main/LiveTV/AniXLinks/AniXLinks.m3u
+https://raw.githubusercontent.com/AniketSainiOp/Livetv/refs/heads/main/LiveTV/AniXLinks/AniXLinks.m3u
 
 - **JSON Playlist URL**: 
-https://raw.githubusercontent.com/AniketSainiOp/AniXLinks/refs/heads/main/LiveTV/AniXLinks/AniXLinks.json
+https://raw.githubusercontent.com/AniketSainiOp/Livetv/refs/heads/main/LiveTV/AniXLinks/AniXLinks.json
 
 
 
