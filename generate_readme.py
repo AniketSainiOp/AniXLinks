@@ -5,7 +5,7 @@ from datetime import datetime
 import pytz
 
 # --- Configuration ---
-STATS_FILE_PATH = 'LiveTV/AniXLive/stats.json'
+STATS_FILE_PATH = 'LiveTV/AniXLinks/stats.json'
 README_FILE_PATH = 'README.md'
 REPO_URL = 'AniketSainOp/AniXLinks'
 AUTHOR_NAME = 'Aniket (aniket_aep)'
@@ -52,10 +52,10 @@ This project automatically scours the web for publicly available IPTV channel st
 Use the following links to directly access the playlists. These links are automatically updated by the workflow.
 
 - **M3U Playlist URL**: 
-https://raw.githubusercontent.com/{REPO_URL}/main/LiveTV/AniXLive/AniXLinks.m3u
+https://raw.githubusercontent.com/{REPO_URL}/main/LiveTV/AniXlinks/AniXLinks.m3u
 
 - **JSON Playlist URL**: 
-https://raw.githubusercontent.com/{REPO_URL}/main/LiveTV/AniXLive/AniXLinks.json
+https://raw.githubusercontent.com/{REPO_URL}/main/LiveTV/AniXLinks/AniXLinks.json
 
 
 
