@@ -17,7 +17,7 @@ This project automatically scours the web for publicly available IPTV channel st
 
 | Total Channels | Total Groups | Last Updated |
 | :---: | :---: | :---: |
-| **773** | **47** | **18 July 2025, 10:04 PM IST** |
+| **772** | **47** | **19 July 2025, 12:13 AM IST** |
 
 ---
 
