@@ -1,0 +1,116 @@
+# Name of the GitHub Actions workflow
+name: 🎬 AniXLinks Auto Update
+
+# Defines the triggers for this workflow
+on:
+  schedule:
+    # Run every 6 hours (at 00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
+  
+  workflow_dispatch:
+    # Allows the workflow to be triggered manually from the GitHub UI
+    inputs:
+      skip_link_check:
+        description: 'Skip link validation for faster processing'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+  
+  push:
+    # Run when changes are pushed to the 'main' branch that affect these files
+    branches: [ main ]
+    paths:
+      - 'AniXLinks.py' # Updated filename
+      - '.github/workflows/update.yml'
+
+# Defines the jobs to be run in the workflow
+jobs:
+  update-channels:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      # Step 1: Check out the repository's code
+      - name: 🔄 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 2: Set up the Python environment
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # Step 3: Install the required Python libraries
+      - name: 📦 Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 pytz aiohttp
+
+      # Step 4: Run the main Python script to collect channels
+      - name: 🎬 Run AniXLinks Collector
+        env:
+          SKIP_LINK_CHECK: ${{ inputs.skip_link_check || 'false' }} 
+        run: |
+          python AniXLinks.py # Updated filename
+
+      # Step 5: Dynamically generate the README.md file using the latest stats
+      - name: 📊 Generate README
+        run: |
+          python -c "
+          import json
+          import os
+          from datetime import datetime
+          import pytz
+
+          if os.path.exists('LiveTV/Bangladesh/stats.json'):
+              with open('LiveTV/Bangladesh/stats.json', 'r', encoding='utf-8') as f:
+                  stats = json.load(f)
+          else:
+              stats = {'total_channels': 0, 'total_groups': 0}
+
+          readme_content = '''# 🎬 AniXLinks - Live TV Channels
+
+> **Advanced M3U Playlist Collector by Aniket** > 
+> Follow me on Instagram: [@aniket_aep](https://instagram.com/aniket_aep)
+
+## 📊 Channel Statistics
+
+- 📺 **Total Channels**: {total_channels}
+- 📂 **Total Groups**: {total_groups}
+- 🕐 **Last Updated**: {updated_at}
+- 🔄 **Auto-Updated**: Every 6 hours
+
+## 🚀 Quick Access
+
+### 📱 Direct Links
+- **📄 AniXLinks.json**: [Download](https://raw.githubusercontent.com/aniketsainiop/AniXLinks/main/LiveTV/Bangladesh/AniXLinks.json)
+- **📺 M3U Playlist**: [Download](https://raw.githubusercontent.com/aniketsainiop/AniXLinks/main/LiveTV/Bangladesh/AniXLinks.m3u)
+          '''
+
+          with open('README.md', 'w', encoding='utf-8') as f:
+              f.write(readme_content.format(
+                  total_channels=stats.get('total_channels', 0),
+                  total_groups=stats.get('total_groups', 0),
+                  updated_at=datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S IST')
+              ))
+          "
+
+      # Step 6: Commit the updated files back to the repository
+      - name: 💾 Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add LiveTV/Bangladesh/* README.md
+          if ! git diff --staged --quiet; then
+            git commit -m "📊 Automated Channel Update ($(date -u +'%Y-%m-%d %H:%M:%S UTC'))"
+            git push
+          else
+            echo "No changes to commit."
+          fi
